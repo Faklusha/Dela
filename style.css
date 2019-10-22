@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body,
+html,
+button,
+input,
+.social,
+.divider,
+.localAccount,
+.background img {
+  width: 100%;
+}
+
+body,
+button {
+  font-family: 'OpenSans';
+}
+
+body {
+  color: #007fa4;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+html,
+body,
+.container,
+.background,
+.panel {
+  height: 100%;
+}
+
+/* border-radius */
+
+input,
+button {
+  border-radius: 2px;
+}
+
+.logo {
+  border-radius: 1px;
+}
+
+/* background-white */
+
+.logo,
+.panel,
+.divider h2 {
+  background-color: #fff;
+}
+
+/* content center */
+
+#api,
+.panel {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+button,
+h2 {
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.create {
+  display: none;
+}
+
+/* buttons */
+
+.options {
+  margin-top: 12px;
+}
+
+button {
+  padding: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-bottom: 28px;
+}
+
+#DELAIdP {
+  background-color: #007fa4;
+}
+
+.buttons button {
+  background-color: #ed7522;
+}
+
+/* inputs */
+
+input {
+  padding: 7px 10px;
+  border: 1px solid #c4cdd3;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 8px 0 0;
+  -moz-box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  line-height: normal;
+}
+
+input:focus,
+input:active {
+  border-color: #007fa4;
+  outline: 0;
+}
+
+input::placeholder {
+  color: #c4cdd3
+}
+
+input:-ms-input-placeholder {
+  color: #c4cdd3
+}
+
+/* display flex */
+.container, .panel, #api {
+  display: flex;
+}
+
+/* orders */
+
+.localAccount {
+  order: 1;
+}
+
+.divider {
+  order: 2;
+}
+
+.social {
+  order: 3;
+}
+
+/* */
+
+/* component container */
+
+.container {
+  overflow: hidden;
+}
+
+/* background */
+
+.background {
+  flex: 1 0 60%;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+/* logo */
+
+.logo {
+  background-image: url('./assets/images/logo.svg');
+  display: inline-block;
+  width: 122px;
+  height: 67px;
+  background-size: 122px 67px;
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+/* end component */
+
+/* component panel */
+
+.panel {
+  flex: 1 0 40%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#api {
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 20px 0;
+}
+
+.entry {
+  padding: 40px 0 0;
+}
+
+.entry-item {
+  text-align: left;
+  margin: 0 0 24px;
+}
+
+.entry-item .error {
+  color: #e54c42;
+}
+
+.entry-item label {
+  font-size: 14px;
+}
+
+.entry-item a {
+  display: none;
+}
+
+/* deviders  */
+
+.localAccount .divider {
+  display: none;
+}
+
+.divider h2 {
+  display: inline-block;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.divider:before,
+.divider:after {
+  content: '';
+  border-top: 1px solid #c4cdd3;
+  display: table-cell;
+  position: relative;
+  top: 20px;
+  width: 50%;
+}
+
+.divider:before {
+  left: 0;
+}
+
+.divider:after {
+  right: 0;
+}
+
+.divider {
+  font-size: 14px;
+  font-weight: 800;
+  display: table;
+  margin-bottom: 23px;
+}
+
+/* end component */
+
+/* animation */
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+/* */
+
+/* fonts */
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* */
+
+/* @media query */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1025px) {
+  #api {
+    width: 280px;
+  }
+
+  .panel {
+    width: 375px;
+  }
+}
+
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1920px) {
+  #api {
+    width: 304px;
+  }
+
+  .panel {
+    width: 440px;
+  }
+}
+
+@media only screen and (min-device-width : 1920px) {
+  .panel {
+    width: 546px;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .background,
+  .panel {
+    flex: 1 0 50%;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .background {
+    display: none;
+  }
+  .panel {
+    flex: 1 0 100%;
+  }
+}
+
+/* */

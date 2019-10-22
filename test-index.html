@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dela</title>
+  <link href="./style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+</head>
+
+<body>
+  <div class="container">
+    <div class="background" style="background-image: url(./assets/images/bg.jpg)">
+      <span class="logo"></span>
+    </div>
+    <div class="panel">
+        <div id="api" data-name="Unified">
+
+    <div class="social" aria-label="with DELA account" role="form">
+      <div class="intro">
+        <h2>with DELA account</h2>
+      </div>
+      <div class="options">
+        <div>
+          <button class="accountButton firstButton" id="DELAIdP" tabindex="1">Sign in with DELA account</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">
+      <h2>OR</h2>
+    </div>
+
+    <div class="localAccount" aria-label="Sign in with your user name" role="form">
+        <div class="intro">
+          <h2>
+            Sign in with your user name
+          </h2>
+        </div>
+        <div class="error pageLevel" aria-hidden="true" style="display: none;">
+          <p role="alert"></p>
+        </div>
+        <div class="entry">
+          <div class="entry-item">
+            <label for="logonIdentifier">
+              Email Address
+            </label>
+            <div class="error itemLevel" aria-hidden="true" style="display: none;">
+              <p role="alert"></p>
+            </div>
+            <input type="email" id="logonIdentifier" name="Username or email address" pattern="^[a-zA-Z0-9.!#$%&amp;’'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Email Address" value="" tabindex="1">
+          </div>
+          <div class="entry-item">
+            <div class="password-label">
+              <label for="password">Password</label>
+              <a id="forgotPassword" tabindex="2" href="/delabedevb2c.onmicrosoft.com/B2C_1_Test/api/CombinedSigninAndSignup/forgotPassword?csrf_token=T1gwNitGVVJUQzNaWWtpV2luaXREaU1qUkYrK2s1c0k1RVdjeVVpOXUyMHFSMC90R2k1YlR2d050K01pSWVkM3ZnS01YQmhBOEFPSWxFb2o2SjdkclE9PTsyMDE5LTEwLTIyVDA2OjU1OjUxLjI1OTkzMTVaOzA3Yk8zZjBlNStvNjRxREI2bDQveXc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJlNzJjYmY2Yy04Y2I3LTQ4MTgtOTVhZS03NjM1Mzk0ODlmN2QifQ&amp;p=B2C_1_Test">Forgot your password?</a>
+            </div>
+            <div class="error itemLevel" aria-hidden="true" style="display: none;">
+              <p role="alert"></p>
+            </div>
+            <input type="password" id="password" name="Password" placeholder="Password" tabindex="1">
+          </div>
+          <div class="working"></div>
+          <div class="buttons">
+            <button id="next" tabindex="1">Sign in</button>
+          </div>
+        </div>
+        
+        <div class="divider">
+          <h2>OR</h2>
+        </div>
+        <div class="create">
+          <p>
+            Don't have an account?<a id="createAccount" tabindex="1" href="/delabedevb2c.onmicrosoft.com/B2C_1_Test/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=T1gwNitGVVJUQzNaWWtpV2luaXREaU1qUkYrK2s1c0k1RVdjeVVpOXUyMHFSMC90R2k1YlR2d050K01pSWVkM3ZnS01YQmhBOEFPSWxFb2o2SjdkclE9PTsyMDE5LTEwLTIyVDA2OjU1OjUxLjI1OTkzMTVaOzA3Yk8zZjBlNStvNjRxREI2bDQveXc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJlNzJjYmY2Yy04Y2I3LTQ4MTgtOTVhZS03NjM1Mzk0ODlmN2QifQ&amp;p=B2C_1_Test">Sign up now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>
