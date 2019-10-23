@@ -189,6 +189,7 @@ input:-ms-input-placeholder {
 
 .panel {
   flex: 1 0 40%;
+  flex-direction: column;
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
