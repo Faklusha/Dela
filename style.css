@@ -62,6 +62,11 @@ button {
   align-items: center;
 }
 
+.panel {
+  display: flex;
+  flex-direction: column;
+}
+
 button,
 h2 {
   font-size: 16px;
@@ -189,7 +194,6 @@ input:-ms-input-placeholder {
 
 .panel {
   flex: 1 0 40%;
-  flex-direction: column;
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
