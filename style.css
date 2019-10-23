@@ -192,8 +192,6 @@ input:-ms-input-placeholder {
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 #api {
